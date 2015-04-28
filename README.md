@@ -11,6 +11,6 @@ Each of these patterns falls under its own subfolder and is implemented using py
 * Registry - M
 * Value Object - M
 * Special Case - M
-* Plugin - H
-* Service Stub - E
+* Plugin - H - Robert
+* Service Stub - E - Robert
 * Record Set - M
