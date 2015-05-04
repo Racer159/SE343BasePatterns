@@ -4,13 +4,14 @@ The purpose of this exercise is to acclimate you with Fowler's "Base Patterns". 
 ## Implementation
 Each of these patterns falls under its own subfolder and is implemented using python3.  Below is the categorization of the difficulty of each as easy (E), medium (M), and hard (H).
 
-* Gateway - E 
-* Mapper - E
-* Layer Supertype - E
-* Seperate Interface - E
-* Registry - M
-* Value Object - M
-* Special Case - M
-* Plugin - H
-* Service Stub - E
-* Record Set - M
+* Gateway - E - Ryan
+* Mapper - E - Wayne
+* Layer Supertype - E - Wayne
+* Seperate Interface - E - Randy
+* Registry - M - Randy
+* Value Object - M - Chris
+* Special Case - M - Chris
+* Plugin - H - Robert
+* Service Stub - E - Wayne
+* Record Set - M - Ryan
+
