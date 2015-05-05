@@ -14,3 +14,4 @@ Each of these patterns falls under its own subfolder and is implemented using py
 * Plugin - H - Robert
 * Service Stub - E - Wayne
 * Record Set - M - Ryan
+
