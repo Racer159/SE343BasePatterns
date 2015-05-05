@@ -1,4 +1,6 @@
 """ Special Case Implementation """
+import random
+
 
 class User(object):
     """ User Class """
@@ -6,18 +8,13 @@ class User(object):
     name = ""
     email = ""
     username = ""
-    funds = 123000
 
     def __init__(self, name, email, username):
-        pass
+        self.name = name
+        self.email = email
+        self.username = username
 
-    def get_funds(self):
-        return self.funds
-
-    def add_to_funds(self, funds):
-        return self.funds + funds
-
-    def changeName(self, name):
+    def change_name(self, name):
         self.name = name
 
 
@@ -28,8 +25,30 @@ class AnonUser(User):
     email = "anon@ymous.com"
     username = "anon3691"
 
-    def get_funds(self):
-        return None
+    def __init__(self):
+        pass
 
-    def add_to_funds(self):
-        return None
+
+def main():
+    """Randomly select a user type and perform some tasks.
+    Demonstrates that an anonymous user can perform similar actions
+    without None checks
+    """
+    num = random.randint(0, 100)
+
+    if num % 2 == 0:
+        user = User("Betty White", "bwhite@rit.edu", "wbetty123")
+    else:
+        user = AnonUser()
+
+    print("Look! The user is not None! " + str(user))
+
+    # Do some stuff with the user
+    print("Users Name: " + user.name)
+    user.change_name("Major Payne")
+    print("Users New Name: " + user.name)
+
+    print("Users Email: " + user.email)
+
+if __name__ == "__main__":
+    main()
